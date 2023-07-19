@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sen', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.jumbotron h1 {
+    font-size: 50px;
+}
+
+.jumbotron p {
+    font-size: 25px;
+}
+
+.jumbotron {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    text-align: center;
+    color: #fff;
+}
+
+nav {
+    background-color: #fff;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    padding-inline: 2rem;
+    display: flex;
+    gap: 6rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: blue;
+}
+main {
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex :5;
+    gap: 4rem;
+    line-height: 1.5;
+    color: #111;
+    background-color: #111;
+    align-items: stretch;
+}
+
+#content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem 2rem;
+}
+
+#maskapai h1{
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    background-color: #111;
+}
+
+#maskapai p {
+    text-align: justify;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 #fff;
+    border-radius: 7px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+article #hargatiket {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 2 rem;
+}
+
+article #kelas {
+    display: flex;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 20px;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    flex: 1;
+}
+
+.card2 h2{
+    color: #fff;
+}
+
+h2, h3 {
+    color: #111;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#kelas h1{
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    background-color: #111;   
+}
+
+#kelas .card p {
+    text-align: justify;
+}
+
+#hargatiket h1{
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    background-color: #111;   
+}
+
+article #hargatiket .card h2 p{
+    display: flex;
+    flex-direction: row;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+aside {
+    height: 100%;
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    flex: 1;
+}
+
+.profile header {
+    display: block;
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.profile section{
+    text-align: left;
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #111;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+    nav ul {
+        justify-content: center;
+    }
+    
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+}
+
+@media screen and (max-width: 393px) {   
+    nav ul {
+        flex-direction: column;
+        justify-content: left;
+    }
+    main {
+        flex-flow: column nowrap;
+      }
+    main aside {
+      align-self: center;
+    }
+}
